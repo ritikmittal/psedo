@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<h1>Register for comlplaint</h1>
+<form action="/register" method="post">
+  <input autofocus autocomplete="off" placeholder="Name" type="text" name="name">
+  <input type="text" name="comlplaint" placeholder="comlplaint">
+  <input type="text" name="email" placeholder="email">
+  <input type="submit" name="register">
+  {{User}}
+</form>
+{% endblock %}
